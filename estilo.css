@@ -1,0 +1,79 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(246, 244, 235);;
+  }
+  
+  header {
+    background-color: rgb(145, 200, 228);
+    color: black;
+    padding: 1em 0;
+  }
+  
+  main {
+    margin: 2em auto;
+  }
+  
+  button {
+    background-color: rgb(145, 200, 228);
+    color: black;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: rgb(145, 200, 228);
+  }
+  
+  img {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  /* Ocultar la sección de QR por defecto */
+  .desktop {
+    display: none;
+  }
+  
+  /* Mostrar la versión de escritorio si el ancho es mayor a 768px */
+  @media (min-width: 768px) {
+    .mobile {
+      display: none;
+    }
+    .desktop {
+      display: block;
+    }
+  }
+
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 100%; /* Ajusta al ancho total de la pantalla */
+   
+  }
+  
+  .carousel-inner img {
+    width: 80%; /* Ajusta este porcentaje según el tamaño deseado */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 0 auto; /* Centra las imágenes en su contenedor */
+    display: block; /* Asegura el comportamiento del centrado */
+    object-fit: cover; /* Escala la imagen sin deformarla */
+  }
+
+  .carousel-inner {
+    max-width: 800px; /* Tamaño máximo del carrusel */
+    height: 500px; /* Altura fija */
+    margin: 0 auto; /* Centrado horizontal */
+    overflow: hidden; /* Evita que contenido extra se vea fuera del carrusel */
+  }
+  
+  
+  
